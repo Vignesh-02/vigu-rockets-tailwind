@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 bg-blue-600 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero"> 🚀 Vigu Rockets</a>
+        </h1>
+
+        <div>
+          <button
+            id="hamburger-button"
+            class="relative h-8 w-8 cursor-pointer text-3xl focus:outline-none md:hidden"
+          >
+            <!-- &#9776; -->
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="#rockets" class="hover:opacity-50">Our Rockets</a>
+            <a href="#testimonials" class="hover:opacity-50">Testimonials</a>
+            <a href="#contact" class="hover:opacity-50">Contact</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-red-900 text-5xl
+        text-dreamColor-dark
+        "
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full py-6 text-center hover:opacity-90"
+            >Home</a
+          >
+          <a href="#rockets" class="w-full py-6 text-center hover:opacity-90"
+            >Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full py-6 text-center hover:opacity-90"
+            >Contact</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="mx-auto max-w-4xl">
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen:section-min-height m-5 mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 py-5 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
+          >
+            Let the
+            <span class="text-indigo-700 dark:text-indigo-300">rocket</span>
+            lead us to unknown territory...
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            We build rockets that can be used after aeons
+          </p>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
+          >
+            These rockets can go to the farthest depths of the galaxy
+          </p>
+        </article>
+        <img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
+      </section>
+
+      <hr class="darl:bg-white mx-auto w-1/2 bg-black" />
+
+      <section
+        id="rockets"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Our Rockets
+        </h2>
+        <ul
+          class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
+        >
+          <li
+            class="dark:border-gry-100 flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:bg-black sm:w-5/6"
+          >
+            <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Drifter
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-500 sm:block"
+            >
+              $
+            </p>
+            <p
+              class="mt-2 text-center text-3xl text-slate-500 dark:text-slate-500 sm:hidden"
+            >
+              Budget Rocket
+            </p>
+          </li>
+          <li
+            class="dark:border-gry-100 flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:bg-black sm:w-5/6"
+          >
+            <img src="./img/rocketride.png" alt="Explorer" class="mb-6 w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Wayfarer
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-500 sm:block"
+            >
+              $$
+            </p>
+            <p
+              class="mt-2 text-center text-3xl text-slate-500 dark:text-slate-500 sm:hidden"
+            >
+              BestSeller Rocket
+            </p>
+          </li>
+          <li
+            class="dark:border-gry-100 flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:bg-black sm:w-5/6"
+          >
+            <img
+              src="./img/rocketlaunch.png"
+              alt="Explorer"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Explorer
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-500 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-3xl text-slate-500 dark:text-slate-500 sm:hidden"
+            >
+              View our Rockets
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="darl:bg-white mx-auto w-1/2 bg-black" />
+
+      <section
+        id="testimonials"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 scroll-mt-20 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-blue-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              Vigu's rockets have helped me reach my destinations faster than
+              before. I recommeend it to all my fellow Eartheans
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212;Bob Thorn, Carpenter
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-blue-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              Each rocket here is worth every penny. Get them before get over
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212;John Krazinski, Scrum Master
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="relative rounded-3xl bg-blue-600 py-12 pl-14 pr-8 dark:bg-black"
+          >
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              These rockets have helped me achieve my goals. Just get on them
+            </p>
+          </blockquote>
+          <figcaption
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
+          >
+            &#8212;Rob Van Dam, Archtiect
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="darl:bg-white mx-auto w-1/2 bg-black" />
+
+      <section
+        id="contact"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Contact us
+        </h2>
+        <form
+          action=""
+          class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder=" Your Subject"
+            class="w-full rounded-xl border border-solid border-slate-900 text-2xl text-black dark:border-none sm:text-3xl"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder=" Your Message"
+            required
+            minlength="7"
+            maxlength="200"
+            class="w-full rounded-xl border border-solid border-slate-900 text-2xl text-black dark:border-none sm:text-3xl"
+          >
+          </textarea>
+          <button
+            class="w-48 rounded-xl border-solid border-slate-700 bg-blue-700 p-4 text-white hover:bg-blue-600 active:bg-blue-500 dark:border-none"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-blue-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-5 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Vigu;s Rockets, Davigu Inc.</h2>
+          1401, Sai Avenue <br />
+          Sai Complex, Navghar Road <br />
+          Mulund East, Mumbai <br />
+          Email: <a href="mailto:vigudev02@gmail.com">vigudev02@gmail.com</a>
+          <br />
+          Phone: <a href="tel:+919821081677">(91) 982-106-8177</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">
+            Copyright &copy;
+            <span id="year">2022</span>
+          </p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
